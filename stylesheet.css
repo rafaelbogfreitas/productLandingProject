@@ -163,6 +163,7 @@ iframe {
   box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
 }
 
+/* box contents */
 .products-box img {
   max-width: 90%;
   display: block;
@@ -206,13 +207,73 @@ iframe {
   color: white;
   margin:20px;
   width: 29%;
-  font-family: Helvetica;
+  font-family: "Dancing Script";
   font-size: 0.9rem;
   font-style: bold;
   border-radius: 5px;
+  border-style: hidden;
 }
 
 .price-button:hover {
+  box-shadow: 0px 0px 3px black;
+}
+
+/* FOOTER */
+footer {
+  display:flex;
+  justify-content: space-between;
+}
+/* FIND US SESSION */
+#find-us {
+  display:flex;
+  flex-direction: row;
+  margin:3% 4%;
+  font-size: 1.5rem;
+}
+
+#find-us ul {
+  display:flex;
+}
+
+#find-us ul li{
+  margin-left: 35px;
+  font-size: 3rem;
+  color: #E7590D;
+}
+
+
+
+/* SUBSCRIBE SESSION */
+#form {
+  display:flex;
+  flex-direction:column;
+  flex:0 1 calc(50%);
+  margin:2%;
+  background-color: rgba(255,255,255,0.8);
+}
+
+#email-box {
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#form-description {
+  margin:20px;
+  font-size: 1.3rem;
+}
+
+#email {
+  flex:0 1 calc(60%);
+  text-align: center;
+}
+
+#submit {
+  flex:0 1 calc(30%);
+  border-radius: 5px;
+}
+
+#submit:hover {
   box-shadow: 0px 0px 3px black;
 }
 
@@ -252,6 +313,15 @@ iframe {
   }
   #video {
     width:90%;
+  }
+
+  #find-us {
+    flex-direction: column;
+  }
+
+  #find-us ul li {
+    font-size: 2rem;
+    margin-top: 15px;
   }
 }
 
@@ -301,5 +371,20 @@ iframe {
 
   .products-box p {
     font-size: 0.9rem;
+  }
+
+  footer {
+    margin: 0 auto;
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+
+  #find-us {
+    margin-bottom: 50px;
+  }
+
+  #find-us ul li {
+    margin-left: 45px;
+    font-size: 2.1rem;
   }
 }
